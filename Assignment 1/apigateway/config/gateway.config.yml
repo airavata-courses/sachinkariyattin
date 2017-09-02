@@ -9,24 +9,24 @@ apiEndpoints:
     paths: '/flask/*'
   javamicro:
     host: '*'
-    paths: '/sciencegateway/webapi/hello/*'
+    paths: '/JavaMicroservice/webapi/sendmessage/*'
   dbmicroinsert:
     host: '*'
-    paths: '/sciencegateway/webapi/register/*'
+    paths: '/JavaMicroservice/webapi/register/*'
   dbmicroget:
     host: '*'
-    paths: '/sciencegateway/webapi/register'
+    paths: '/JavaMicroservice/webapi/register'
   uitarget:
     host: '*'
-    paths: '/*'
+    paths: '/*.html'
     
 serviceEndpoints:
   inputendpoint:
     url: 'http://localhost:5000'
   micro2:
-    url: 'http://localhost:9090'
+    url: 'http://localhost:10080'
   ui:
-    url: 'http://127.0.0.1:53238'
+    url: 'http://localhost:8090'
 policies:
   - basic-auth
   - cors
