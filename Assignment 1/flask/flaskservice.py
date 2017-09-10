@@ -11,7 +11,7 @@ def getUsername(username):
 	channel.queue_declare(queue='QUEUE1')
 	channel.basic_publish(exchange='',
                       routing_key='QUEUE1',
-                      body=username)
+                      body=username+'Flas')
 	connection.close()
 	return "Sent " + username
 
