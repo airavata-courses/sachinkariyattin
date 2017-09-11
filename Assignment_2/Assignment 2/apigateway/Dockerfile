@@ -7,6 +7,6 @@ ADD . /app
 
 RUN npm install express-gateway
 
-EXPOSE 80
+EXPOSE 7070
 
 CMD ["npm", "start"]
