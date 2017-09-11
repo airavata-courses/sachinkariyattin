@@ -1,4 +1,3 @@
-import requests
 import pika
 from flask import Flask
 
