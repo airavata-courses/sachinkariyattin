@@ -1,3 +1,4 @@
+import requests
 import pika
 from flask import Flask
 
@@ -12,7 +13,9 @@ def getUsername(username):
                       routing_key='QUEUE1',
                       body=username+'Flas')
 	connection.close()
-	return "Sent " + username
+	# these requests just invoke the RabbitMQ receive function, actual messages are sent through queues
+	x = requests.get('http://localhost:8080/JavaMicroservice/webapi/register/reg/sometext').content
+	return requests.get('http://localhost:8080/JavaMicroservice/webapi/sendmessage/sometext').content
 
 @app.route("/")
 def hello():

@@ -24,7 +24,7 @@ serviceEndpoints:
   inputendpoint:
     url: 'http://localhost:5000'
   micro2:
-    url: 'http://localhost:10080'
+    url: 'http://localhost:9090'
   ui:
     url: 'http://localhost:8090'
 policies:
