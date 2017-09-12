@@ -9,7 +9,7 @@ public class RabbitSendReceive {
     public Connection makeConnectionChannel() throws Exception{
 
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("localhost");
+        factory.setHost("my-rabbit");
         Connection connection = factory.newConnection();
 
         return connection;
