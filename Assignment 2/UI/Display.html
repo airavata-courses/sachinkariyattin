@@ -17,7 +17,7 @@
 var app = angular.module('myApp', []);
 app.controller('myCtrlDisp', function($scope, $http) {
 
-    $scope.url = 'http://localhost:8080/JavaMicroservice/webapi/register'
+    $scope.url = 'http://localhost:7070/JavaMicroservice/webapi/register'
   $http.get($scope.url)
   .then(function(response) {
       $scope.sts = response.data;

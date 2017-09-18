@@ -21,7 +21,7 @@
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope, $http) {
     $scope.submit = function() {
-        $scope.url = 'http://localhost:8080/flask/'+$scope.message
+        $scope.url = 'http://localhost:7070/flask/'+$scope.message
   $http.get($scope.url)
   .then(function(response) {
       $scope.sts = response.data;
