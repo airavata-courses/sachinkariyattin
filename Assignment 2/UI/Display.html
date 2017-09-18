@@ -7,7 +7,7 @@
 
 <p></p>
 
-<h1>Science GateWay Assignment 1</h1>
+<h1>Science GateWay Assignment 2</h1>
 <div ng-repeat="st in sts ">
   {{st.messages}}
 </div>
@@ -17,7 +17,7 @@
 var app = angular.module('myApp', []);
 app.controller('myCtrlDisp', function($scope, $http) {
 
-    $scope.url = 'http://localhost:7070/JavaMicroservice/webapi/register'
+    $scope.url = 'http://149.165.157.130:7070/JavaMicroservice/webapi/register'
   $http.get($scope.url)
   .then(function(response) {
       $scope.sts = response.data;
