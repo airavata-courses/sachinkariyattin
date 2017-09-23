@@ -9,7 +9,9 @@ public class RabbitSendReceive {
     public Connection makeConnectionChannel() throws Exception{
 
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("my-rabbit");
+        factory.setHost("149.165.157.125");
+	factory.setUsername("mqadmin");
+	factory.setPassword("mqadminpassword");
         Connection connection = factory.newConnection();
 
         return connection;
